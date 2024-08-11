@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+       ul{
+        display: flex;
+        list-style: none;
+        font-size: 25px;
+        justify-content: space-around;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border: 1px solid red;
+        border-radius: 12px;
+       }
+       .container{
+        display: flex;
+        
+       }
+       .box{
+        margin-left: 30px;
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+       box-shadow: 4px 4px 4px rgba(0, 0, 0, .3);
+       }
+       a{
+        color: white;
+        text-decoration: none;
+       }
+       .box:target{
+        color: white;
+        background-color: black;
+        border-radius: 18%;
+
+       }
+       li:hover{
+        text-decoration: underline;
+       }
+h2{
+    font-size: 24;
+    text-align: center;
+    font-family: sans-serif;
+}
+p{
+    font-size: 20px;
+}
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class=" box html" id="html">
+            <h2>HTML</h2>
+            <p>It is a markup language.</p>
+        </div>
+        <div class="box css" id="css">
+            <h2>CSS</h2>
+            <p>It defines styles for HTML</p>
+        </div>
+        <div class="box js" id="js">
+            <h2>JavaScript</h2>
+            <p>It is a client side language.</p>
+        </div>
+    </div>
+</body>
+</html>
