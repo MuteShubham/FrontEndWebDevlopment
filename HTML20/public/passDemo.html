@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        
+        .pass:valid+div{
+            display: none;
+        }
+        .pass:invalid+div{
+            display: block;
+            color: red;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Name : <input type="text" name="name" value="Shubham" readonly> <br>
+        password : <input type="password" name="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="pass"
+>
+        <div>pass is invalid</div>
+    </form>
+</body>
+</html>

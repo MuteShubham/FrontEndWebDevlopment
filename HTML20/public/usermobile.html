@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt{
+            font-weight: bold;
+        }
+        .user:invalid+div{
+            display: block;
+            color: red;
+        }
+        
+        .user:valid+div{
+            display: none;
+        }
+        
+        .mobile:invalid+div{
+            display: block;
+            color: red;
+        }
+        .mobile:valid+div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" name="name" class="user" required>
+            <div>User Name Recuired</div></dd>
+            <dt>Mobile</dt>
+            <dd>
+                <input type="password" pattern="\+91\d{10}" name="password" class="mobile">
+                <div>start with +91 and contains 10 digit</div>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>

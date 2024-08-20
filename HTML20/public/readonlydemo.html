@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt{
+            font-weight: bold;
+        }
+        .user:hover{
+            cursor:none;
+        }
+        .mobile{
+            border: 1px solid green;
+            box-shadow: 4px 4px 2px green;
+        }
+        .user:read-only{
+            cursor: not-allowed;
+        }
+        .mobile:invalid+div{
+            display: block;
+            color: red;
+        }
+        .mobile:valid+div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+<dl>
+    <dt>User Name</dt>
+    <dd><input type="text" class="user" name="UserName" value="John" readonly id=""></dd>
+    <dt>Mobile</dt>
+    <dd><input type="text" name="mobile" autofocus pattern="\+91\d{10}" class="mobile">
+    <div>Start with+91 and contain 10 digits</div>
+    </dd>
+</dl>
+
+    </form>
+</body>
+</html>

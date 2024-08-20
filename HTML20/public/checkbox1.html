@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            height: 100px;
+            width: 200px;
+            overflow: auto;
+        }
+        li{
+            list-style: none;
+        }
+        #term:checked+label{
+            color: green;
+        }
+        #term+label{
+            color: red;
+        }
+        #term~button{
+            display: none;
+        }
+        #term:checked~button{
+            display: block;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <label for="">Select Courses</label>
+    <form action="">
+       <div class="box">
+        <ul>
+            <li> <input type="checkbox" name="skill" value="UI" id="">UI</li>
+            <li><input type="checkbox" name="skill"value="MongoDB" id="">MongoDB</li>
+            <li><input type="checkbox" name="skill" value="NodeJS"  id="">Node JS</li>
+            <li><input type="checkbox" name="skill" value="oracle" id="">Oracle</li>
+            <li><input type="checkbox" name="skill" value="MySql" id="">MySql</li>
+            <li><input type="checkbox" name="skill" value="JSP" id="">JSP</li>
+        </ul>
+        </div>
+        <div>
+            <label for="">Our term of services</label>
+            <div class="box">read our terms of services something</div>
+        </div>
+        <div>
+        <input type="checkbox" name="accept" id="term">
+        <label for="term">i accept</label><br>
+        <button class="bt">Submit Now</button>
+       </div>
+       </form>
+    
+</body>
+</html>
